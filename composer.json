@@ -1,0 +1,52 @@
+{
+    "name": "xwpd/thinkphp-model-factory",
+    "license": "MIT",
+    "description": "ThinkPHP 模型工厂",
+    "keywords": [
+        "factory",
+        "ThinkPHP",
+        "model"
+    ],
+    "homepage": "http://github.com/xwpd/thinkphp-model-factory",
+    "authors": [
+        {
+            "name": "xwpd",
+            "email": "514261300@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "topthink/framework": "5.1.*",
+        "fzaninotto/faker": "^1.4",
+        "symfony/finder": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xwpd\\ThinkModelFactory\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xwpd\\ThinkModelFactory\\Tests\\": "tests/",
+            "think\\":"vendor/topthink/framework/library/think/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias":{
+            "dev-master":"0.x.x-dev"
+        },
+        "think": {
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
