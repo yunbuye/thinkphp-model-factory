@@ -1,6 +1,6 @@
 <?php
 
-namespace Xwpd\ThinkModelFactory;
+namespace Yunbuye\ThinkModelFactory;
 
 use Closure;
 use ReflectionClass;
@@ -8,7 +8,6 @@ use ReflectionMethod;
 use BadMethodCallException;
 use Faker\Generator as Faker;
 use InvalidArgumentException;
-use think\Db;
 use think\Model;
 use think\Collection;
 
@@ -146,7 +145,6 @@ class FactoryBuilder
      *
      * @var string
      */
-    /*  protected $connection;*/
 
     /**
      * The model states.
@@ -257,12 +255,6 @@ class FactoryBuilder
      * @param string $name
      * @return $this
      */
-    /*public function connection($name)
-    {
-        $this->connection = $name;
-
-        return $this;
-    }*/
 
     /**
      * Create a model and persist it in the database if requested.
@@ -312,9 +304,6 @@ class FactoryBuilder
             /**
              * @var Model $model
              */
-            /*  if (!isset($this->connection)) {
-                  $model->setConnection($model->getConnection());
-              }*/
 
             $model->save();
         });
@@ -411,9 +400,6 @@ class FactoryBuilder
         /**
          * @var Model $instance
          */
-        /*if (isset($this->connection)) {
-            $instance->setConnection(Db::connect($this->connection));
-        }*/
         return $instance;
     }
 

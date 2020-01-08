@@ -1,5 +1,5 @@
 {
-    "name": "xwpd/thinkphp-model-factory",
+    "name": "yunbuye/thinkphp-model-factory",
     "license": "MIT",
     "description": "ThinkPHP 模型工厂",
     "keywords": [
@@ -7,7 +7,7 @@
         "ThinkPHP",
         "model"
     ],
-    "homepage": "http://github.com/xwpd/thinkphp-model-factory",
+    "homepage": "http://github.com/yunbuye/thinkphp-model-factory",
     "authors": [
         {
             "name": "xwpd",
@@ -25,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Xwpd\\ThinkModelFactory\\": "src/"
+            "Yunbuye\\ThinkModelFactory\\": "src/"
         },
         "files": ["src/helpers.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Xwpd\\ThinkModelFactory\\Tests\\": "tests/",
+            "Yunbuye\\ThinkModelFactory\\Tests\\": "tests/",
             "think\\":"vendor/topthink/framework/library/think/"
         }
     },

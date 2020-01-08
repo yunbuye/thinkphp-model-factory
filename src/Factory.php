@@ -1,6 +1,6 @@
 <?php
 
-namespace Xwpd\ThinkModelFactory;
+namespace Yunbuye\ThinkModelFactory;
 
 use ArrayAccess;
 use Faker\Generator as Faker;

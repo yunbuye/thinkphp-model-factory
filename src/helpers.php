@@ -1,11 +1,11 @@
 <?php
-use Xwpd\ThinkModelFactory\Factory as ModelFactory;
+use Yunbuye\ThinkModelFactory\Factory as ModelFactory;
 if (! function_exists('factory')) {
     /**
      * Create a model factory builder for a given class, name, and amount.
      *
      * @param  dynamic  class|class,name|class,amount|class,name,amount
-     * @return \Xwpd\ThinkModelFactory\FactoryBuilder
+     * @return \Yunbuye\ThinkModelFactory\FactoryBuilder
      */
     function modelFactory()
     {
